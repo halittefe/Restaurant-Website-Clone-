@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+:root {
+  --main-color: #e84242;
+  --black-color: #0e0e0e;
+  --border: 0.1rem solid rgba(255, 255, 255, 0, 4);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s ease;
+}
+html {
+  font-size: 62.5%; /* 1 rem = 10px */
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+html::-webkit-scrollbar-track{
+  background-color: #fff;
+}
+html::-webkit-scrollbar-thumb{
+  background-color:var(--black-color);
+  border-radius: 3rem;
+  border: 0.3rem solid #fff;
+  margin: 0.2rem;
+  
+}
+
+body {
+  background-color: var(--main-color);
+  
+}
+section {
+    padding: 3.5rem 7%;
+}
+.btn {
+    display: inline-block;
+    color: #fff;
+    background-color: var(--black-color);
+    border-radius: 30rem;
+    padding: 2rem 3.75rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+.btn:hover{
+  color: #0e0e0e;
+  background-color: #fff;
+  border: 0.3rem solid black;
+  font-weight: 800;
+
+}
+.heading {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 4rem;
+  margin-bottom: 3.5rem;
+  border-bottom: 0.1rem solid #fff;
+}
+.heading span {
+  color: var(--black-color);
+}
+/* header start */
+.header {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7%;
+  margin: 2rem 7%;
+  border-radius: 30rem;
+  box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75); /* box-shadow generator*/
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.header .logo img {
+  height: 10rem;
+}
+.header .navbar a {
+  margin: 0 1rem;
+  font-size: 1.6rem;
+  color: var(--black-color);
+  border-bottom: 0.1rem solid transparent;
+}
+.header .navbar .active,
+.header .navbar a:hover {
+  border-color: var(--main-color);
+  padding: 0.3rem;
+}
+.header .buttons button {
+  margin: 0 1rem;
+  font-size: 2rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* header end */
+/* home start */
+
+
+.home {
+  min-height: 100vh; /* Tam bir sayfa alan */
+  background: url(/images/home.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -14.4rem;
+  display: flex;
+  align-items: center;
+  
+
+}
+.home .content {
+  max-width: 60rem;
+}
+.home .content h3 {
+  font-size: 6rem;
+  color: #fff
+}
+.home .content p {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #ccc;
+}
+/* home end*/
+/* menu start*/
+.menu .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+  gap: 1.5rem;
+}
+.menu .box-container .box {
+  background-color: #fff;
+  padding: 3rem 3rem;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border: 0.3rem solid black;
+}
+.menu .box-container .box img{
+  width: 100%;
+  object-fit: cover;
+}
+.menu .box-container .box .menu-category {
+  font-size: 1.2rem;
+}
+.menu .box-container .box h3 {
+  font-size:3rem;
+  padding: 1rem;
+}
+.menu .box-container .box .price{
+  font-size: 1.8rem;
+  margin: 0 0 3rem 0;
+  font-weight: 500;
+}
+
+.menu .box-container .box .price span {
+  text-decoration: line-through;
+  font-size: 1.2rem;
+  margin: 0 0.4rem;
+  opacity: 0.8;
+}
+
+
+/* menu end*/
+.products .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+  gap: 1.5rem;
+}
+.products .box-container .box{
+  background-color: #fff;
+  padding: 3rem 3rem;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border: 0.3rem solid black;
+  
+
+}
+.products .box-container .dark {
+  background:url(/images/dark-product.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.products .box-container .box img {
+  width: 100%;
+  object-fit: cover;
+}
+
